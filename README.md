@@ -41,9 +41,9 @@ This repository tracks the leading **SaaS platforms**, **Model Context Protocol 
 The **Agentic AI and Tool Integration** market is estimated at **$5.1 billion in 2024–2025** and is projected to surpass **$38.5 billion by 2030**, growing at a **Compound Annual Growth Rate (CAGR) of 41.2%**, propelled by enterprise demand for autonomous workflows and standardized tool protocols.
 
 Currently, the sector exhibits **moderate-to-high fragmentation** across specialized functional layers:
-- **Auth & Credential Gateways** (e.g., Composio, OpenConnector)
+- **Auth & Credential Gateways** (e.g., Composio, OpenConnector, Arcade MCP)
 - **Protocol Standardization & Tool Registries** (e.g., Anthropic MCP, Smithery)
-- **Workflow & Background Execution Runtimes** (e.g., n8n, Activepieces, Trigger.dev, Windmill)
+- **Workflow & Background Execution Runtimes** (e.g., n8n, Dify, Activepieces, Trigger.dev, Windmill)
 - **Unified SaaS Abstraction APIs** (e.g., Zapier, Apideck)
 
 Because switching costs remain relatively low and open protocols like the **Model Context Protocol (MCP)** are gaining universal adoption across IDEs (Claude Desktop, Cursor, Windsurf) and agent frameworks, the sector has resisted single-vendor "winner-take-all" concentration. Instead, platform consolidation is occurring horizontally around open protocol specifications, while proprietary platforms compete aggressively on managed enterprise security, compliance boundaries (SOC 2, HIPAA), and out-of-the-box connector catalogs.
@@ -71,91 +71,111 @@ Below is the curated benchmark of hosted platforms enabling agent function execu
 
 ## 🔓 Open-Source GitHub Projects
 
-The open-source ecosystem provides transparent, self-hosted alternatives to vendor lock-in, placing security boundaries and API credentials under direct developer control.
+The open-source ecosystem provides transparent, self-hosted alternatives to vendor lock-in, placing security boundaries, execution environments, and API credentials under direct developer control.
 
 The list below is sorted in **descending order by GitHub star count**:
 
 1. **[n8n](https://github.com/n8n-io/n8n)** [![GitHub stars](https://img.shields.io/github/stars/n8n-io/n8n?style=social&color=white)](https://github.com/n8n-io/n8n/stargazers)  
-   *Fair-code workflow automation platform with native AI agent orchestration (Sustainable Use License).*  
-   Features 400+ native nodes, advanced AI Agent nodes with sub-node tool calling, LangChain integration, dynamic credential management, and official Model Context Protocol (MCP) client and server support for chaining complex agent actions.
+   *Fair-code workflow automation platform with native AI agent orchestration and tool execution (Sustainable Use License).*  
+   Features 400+ native integrations, dynamic credential management, multi-step sub-agent execution, LangChain integration, and native Model Context Protocol (MCP) client and server support.
 
-2. **[Firecrawl](https://github.com/mendableai/firecrawl)** [![GitHub stars](https://img.shields.io/github/stars/mendableai/firecrawl?style=social&color=white)](https://github.com/mendableai/firecrawl/stargazers)  
+2. **[Firecrawl](https://github.com/firecrawl/firecrawl)** [![GitHub stars](https://img.shields.io/github/stars/firecrawl/firecrawl?style=social&color=white)](https://github.com/firecrawl/firecrawl/stargazers)  
    *Turn entire websites into clean LLM-ready markdown or structured data via API (AGPL-3.0).*  
    Essential agentic tool for web crawling, dynamic JavaScript rendering, subpage traversal, and structured schema extraction. Native MCP server exposes web extraction tools directly to AI agents.
 
-3. **[Browser Use](https://github.com/browser-use/browser-use)** [![GitHub stars](https://img.shields.io/github/stars/browser-use/browser-use?style=social&color=white)](https://github.com/browser-use/browser-use/stargazers)  
+3. **[Dify](https://github.com/langgenius/dify)** [![GitHub stars](https://img.shields.io/github/stars/langgenius/dify?style=social&color=white)](https://github.com/langgenius/dify/stargazers)  
+   *Open-source LLM application development platform and agent workflow orchestrator (Apache-2.0).*  
+   Empowers developers to build autonomous agentic workflows with comprehensive visual tool orchestration, custom plugin integration, RAG pipelines, and built-in function calling schemas.
+
+4. **[Browser Use](https://github.com/browser-use/browser-use)** [![GitHub stars](https://img.shields.io/github/stars/browser-use/browser-use?style=social&color=white)](https://github.com/browser-use/browser-use/stargazers)  
    *Make websites accessible for AI agents through autonomous browser interactions (MIT).*  
    Empowers agents to navigate UI trees, click buttons, bypass form obstacles, fill inputs, and extract data when APIs are missing or restricted, providing a general-purpose web action executor.
 
-4. **[Awesome MCP Servers](https://github.com/punkpeye/awesome-mcp-servers)** [![GitHub stars](https://img.shields.io/github/stars/punkpeye/awesome-mcp-servers?style=social&color=white)](https://github.com/punkpeye/awesome-mcp-servers/stargazers)  
+5. **[Awesome MCP Servers](https://github.com/punkpeye/awesome-mcp-servers)** [![GitHub stars](https://img.shields.io/github/stars/punkpeye/awesome-mcp-servers?style=social&color=white)](https://github.com/punkpeye/awesome-mcp-servers/stargazers)  
    *Comprehensive, community-curated list of Model Context Protocol (MCP) servers and tools (MIT).*  
    Provides a directory of hundreds of production-ready MCP tools spanning cloud providers, developer utilities, databases, productivity apps, and search engines.
 
-5. **[Model Context Protocol Servers](https://github.com/modelcontextprotocol/servers)** [![GitHub stars](https://img.shields.io/github/stars/modelcontextprotocol/servers?style=social&color=white)](https://github.com/modelcontextprotocol/servers/stargazers)  
+6. **[Model Context Protocol Servers](https://github.com/modelcontextprotocol/servers)** [![GitHub stars](https://img.shields.io/github/stars/modelcontextprotocol/servers?style=social&color=white)](https://github.com/modelcontextprotocol/servers/stargazers)  
    *Official reference MCP servers maintained by Anthropic and the MCP community (MIT).*  
    Includes reference implementations for GitHub, PostgreSQL, Slack, Google Drive, Google Maps, Memory, Filesystem, Brave Search, Puppeteer, and Git integrations.
 
-6. **[LiteLLM](https://github.com/BerriAI/litellm)** [![GitHub stars](https://img.shields.io/github/stars/BerriAI/litellm?style=social&color=white)](https://github.com/BerriAI/litellm/stargazers)  
+7. **[OpenHands](https://github.com/OpenHands/OpenHands)** [![GitHub stars](https://img.shields.io/github/stars/OpenHands/OpenHands?style=social&color=white)](https://github.com/OpenHands/OpenHands/stargazers)  
+   *Autonomous AI software development platform and tool execution runtime (MIT).*  
+   Provides an extensible runtime environment enabling AI agents to modify code, run bash commands, execute unit tests, control web browsers, and call external developer tools securely.
+
+8. **[Open Interpreter](https://github.com/openinterpreter/openinterpreter)** [![GitHub stars](https://img.shields.io/github/stars/openinterpreter/openinterpreter?style=social&color=white)](https://github.com/openinterpreter/openinterpreter/stargazers)  
+   *Open-source, locally executing code interpreter that lets LLMs run code and call system APIs (AGPL-3.0).*  
+   Allows autonomous agents to write and execute Python, JavaScript, and Bash scripts directly in the terminal, automating local OS tasks, data processing, and hardware control.
+
+9. **[LiteLLM](https://github.com/BerriAI/litellm)** [![GitHub stars](https://img.shields.io/github/stars/BerriAI/litellm?style=social&color=white)](https://github.com/BerriAI/litellm/stargazers)  
    *Call 100+ LLM APIs in OpenAI format with unified tool calling, retries, and auth proxying (MIT).*  
    Serves as an intelligent proxy gateway translating unified function/tool calling schemas across OpenAI, Anthropic, Bedrock, VertexAI, Azure, and Ollama with virtual key budgets and tracking.
 
-7. **[Activepieces](https://github.com/activepieces/activepieces)** [![GitHub stars](https://img.shields.io/github/stars/activepieces/activepieces?style=social&color=white)](https://github.com/activepieces/activepieces/stargazers)  
-   *Open-source, AI-first automation platform with 280+ integrations (MIT).*  
-   Provides TypeScript-based connectors ("pieces"), a visual builder, human-in-the-loop approvals, and **automatically exposes every piece as an MCP server**—yielding ~400 tools for Claude Desktop, Cursor, and Windsurf.
+10. **[CopilotKit](https://github.com/CopilotKit/CopilotKit)** [![GitHub stars](https://img.shields.io/github/stars/CopilotKit/CopilotKit?style=social&color=white)](https://github.com/CopilotKit/CopilotKit/stargazers)  
+    *Open-source framework for building embedded agentic copilots and action execution protocols (MIT).*  
+    Enables bidirectional state synchronization, frontend agent actions, generative UI, and standardized agent-to-user interaction protocols (AG-UI) inside web applications.
 
-8. **[Windmill](https://github.com/windmill-labs/windmill)** [![GitHub stars](https://img.shields.io/github/stars/windmill-labs/windmill?style=social&color=white)](https://github.com/windmill-labs/windmill/stargazers)  
-   *Open-source developer platform turning scripts into internal tools, workflows, and agent actions (AGPL-3.0).*  
-   Automatically transforms Python, TypeScript, Go, Bash, and SQL scripts into secure, agent-callable endpoints with dedicated workers, auto-generated UIs, and sub-millisecond execution overhead.
+11. **[Activepieces](https://github.com/activepieces/activepieces)** [![GitHub stars](https://img.shields.io/github/stars/activepieces/activepieces?style=social&color=white)](https://github.com/activepieces/activepieces/stargazers)  
+    *Open-source, AI-first automation platform with 280+ integrations (MIT).*  
+    Provides TypeScript-based connectors ("pieces"), a visual builder, human-in-the-loop approvals, and **automatically exposes every piece as an MCP server**—yielding ~400 tools for Claude Desktop, Cursor, and Windsurf.
 
-9. **[E2B](https://github.com/e2b-dev/E2B)** [![GitHub stars](https://img.shields.io/github/stars/e2b-dev/E2B?style=social&color=white)](https://github.com/e2b-dev/E2B/stargazers)  
-   *Secure sandboxed cloud environments for AI agents to run code and external CLI tools (Apache-2.0).*  
-   Provides isolated micro-VMs in milliseconds, allowing autonomous agents to execute Python/Node code, analyze datasets, interact with browsers, and test terminal commands safely.
+12. **[Windmill](https://github.com/windmill-labs/windmill)** [![GitHub stars](https://img.shields.io/github/stars/windmill-labs/windmill?style=social&color=white)](https://github.com/windmill-labs/windmill/stargazers)  
+    *Open-source developer platform turning scripts into internal tools, workflows, and agent actions (AGPL-3.0).*  
+    Automatically transforms Python, TypeScript, Go, Bash, and SQL scripts into secure, agent-callable endpoints with dedicated workers, auto-generated UIs, and sub-millisecond execution overhead.
 
-10. **[OpenConnector](https://github.com/oomol-lab/open-connector)** [![GitHub stars](https://img.shields.io/github/stars/oomol-lab/open-connector?style=social&color=white)](https://github.com/oomol-lab/open-connector/stargazers)  
+13. **[E2B](https://github.com/e2b-dev/E2B)** [![GitHub stars](https://img.shields.io/github/stars/e2b-dev/E2B?style=social&color=white)](https://github.com/e2b-dev/E2B/stargazers)  
+    *Secure sandboxed cloud environments for AI agents to run code and external CLI tools (Apache-2.0).*  
+    Provides isolated micro-VMs in milliseconds, allowing autonomous agents to execute Python/Node code, analyze datasets, interact with browsers, and test terminal commands safely.
+
+14. **[OpenConnector](https://github.com/oomol-lab/open-connector)** [![GitHub stars](https://img.shields.io/github/stars/oomol-lab/open-connector?style=social&color=white)](https://github.com/oomol-lab/open-connector/stargazers)  
     *Open-source auth gateway connecting 1,500+ SaaS providers to AI agents (Apache-2.0).*  
     Positioned as a self-hosted alternative to Pipedream and Composio. Enforces strict **credential and OAuth boundaries** keeping third-party tokens behind the runtime, provides 10,000+ predefined actions, token/scope policies, and a Web Console for debugging.
 
-11. **[Observal](https://github.com/BlazeUp-AI/Observal)** [![GitHub stars](https://img.shields.io/github/stars/BlazeUp-AI/Observal?style=social&color=white)](https://github.com/BlazeUp-AI/Observal/stargazers)  
+15. **[Observal](https://github.com/Observal/Observal)** [![GitHub stars](https://img.shields.io/github/stars/Observal/Observal?style=social&color=white)](https://github.com/Observal/Observal/stargazers)  
     *Self-hosted AI agent registry with built-in observability and evaluation (Apache-2.0).*  
     Features `observal scan` for auto-detecting and instrumenting MCP servers, agent pulling across IDEs (Claude Code, Cursor, Gemini CLI), ClickHouse/Grafana telemetry pipelines, and session eval scoring.
 
-12. **[gen-mcp](https://github.com/genmcp/gen-mcp)** [![GitHub stars](https://img.shields.io/github/stars/genmcp/gen-mcp?style=social&color=white)](https://github.com/genmcp/gen-mcp/stargazers)  
+16. **[Arcade MCP](https://github.com/ArcadeAI/arcade-mcp)** [![GitHub stars](https://img.shields.io/github/stars/ArcadeAI/arcade-mcp?style=social&color=white)](https://github.com/ArcadeAI/arcade-mcp/stargazers)  
+    *MCP Server Framework and Tool Development library for AI agents (MIT).*  
+    Framework designed for building custom agent capabilities with built-in OAuth management across 21+ providers, secret injection, multi-user authentication, and granular tool authorization boundaries.
+
+17. **[gen-mcp](https://github.com/genmcp/gen-mcp)** [![GitHub stars](https://img.shields.io/github/stars/genmcp/gen-mcp?style=social&color=white)](https://github.com/genmcp/gen-mcp/stargazers)  
     *CLI tool converting OpenAPI / Swagger specifications into MCP servers in Go (MIT).*  
     Features `genmcp convert` transforming REST APIs into MCP tools, built-in TLS encryption and OAuth/OIDC authentication, detached server modes, and multi-arch container packaging.
 
-13. **[Zeline](https://github.com/Mftrferdinand/Zeline)** [![GitHub stars](https://img.shields.io/github/stars/Mftrferdinand/Zeline?style=social&color=white)](https://github.com/Mftrferdinand/Zeline/stargazers)  
+18. **[Zeline](https://github.com/Mftrferdinand/Zeline)** [![GitHub stars](https://img.shields.io/github/stars/Mftrferdinand/Zeline?style=social&color=white)](https://github.com/Mftrferdinand/Zeline/stargazers)  
     *Cross-platform agent gateway with multi-channel webhook and messaging support (MIT).*  
     Connects AI agents to communication channels (Telegram, WhatsApp, Webhooks) and provides centralized routing for real-time tool event execution.
 
-14. **[awesome-mcp](https://github.com/abordage/awesome-mcp)** [![GitHub stars](https://img.shields.io/github/stars/abordage/awesome-mcp?style=social&color=white)](https://github.com/abordage/awesome-mcp/stargazers)  
+19. **[awesome-mcp](https://github.com/abordage/awesome-mcp)** [![GitHub stars](https://img.shields.io/github/stars/abordage/awesome-mcp?style=social&color=white)](https://github.com/abordage/awesome-mcp/stargazers)  
     *Curated directory of Model Context Protocol servers, clients, and frameworks (MIT).*  
     Tracks open-source MCP implementations, client bindings, and specification updates.
 
-15. **[awesome-mcp-servers (bgizdov)](https://github.com/bgizdov/awesome-mcp-servers)** [![GitHub stars](https://img.shields.io/github/stars/bgizdov/awesome-mcp-servers?style=social&color=white)](https://github.com/bgizdov/awesome-mcp-servers/stargazers)  
+20. **[awesome-mcp-servers (bgizdov)](https://github.com/bgizdov/awesome-mcp-servers)** [![GitHub stars](https://img.shields.io/github/stars/bgizdov/awesome-mcp-servers?style=social&color=white)](https://github.com/bgizdov/awesome-mcp-servers/stargazers)  
     *Automated index and catalog of active Model Context Protocol tools and servers (MIT).*  
     Monitors GitHub for new MCP repository releases and indexes them by category.
 
-16. **[squad](https://github.com/cowdogmoo/squad)** [![GitHub stars](https://img.shields.io/github/stars/cowdogmoo/squad?style=social&color=white)](https://github.com/cowdogmoo/squad/stargazers)  
+21. **[squad](https://github.com/CowDogMoo/squad)** [![GitHub stars](https://img.shields.io/github/stars/CowDogMoo/squad?style=social&color=white)](https://github.com/CowDogMoo/squad/stargazers)  
     *Model-agnostic agent workflow CLI in Go with MCP support (Apache-2.0).*  
     Provides multi-agent pipelines with cost budgets, OpenTelemetry tracing, and dynamic skill catalogs via `squad skill add`.
 
-17. **[openapi-mcp](https://github.com/ubermorgenland/openapi-mcp)** [![GitHub stars](https://img.shields.io/github/stars/ubermorgenland/openapi-mcp?style=social&color=white)](https://github.com/ubermorgenland/openapi-mcp/stargazers)  
+22. **[openapi-mcp](https://github.com/ubermorgenland/openapi-mcp)** [![GitHub stars](https://img.shields.io/github/stars/ubermorgenland/openapi-mcp?style=social&color=white)](https://github.com/ubermorgenland/openapi-mcp/stargazers)  
     *Dynamic OpenAPI-to-MCP bridge server in Go (Apache-2.0).*  
     Exposes OpenAPI specs as MCP tools with dynamic endpoint management via `spec-manager` CLI, database-backed spec storage, and HTTP administration APIs.
 
-18. **[Automatisch MCP Server](https://github.com/milisp/automatisch-mcp-server)** [![GitHub stars](https://img.shields.io/github/stars/milisp/automatisch-mcp-server?style=social&color=white)](https://github.com/milisp/automatisch-mcp-server/stargazers)  
+23. **[Automatisch MCP Server](https://github.com/milisp/automatisch-mcp-server)** [![GitHub stars](https://img.shields.io/github/stars/milisp/automatisch-mcp-server?style=social&color=white)](https://github.com/milisp/automatisch-mcp-server/stargazers)  
     *MCP server providing AI assistants direct access to Automatisch workflow automation (MIT).*  
     Supports workflow management (CRUD, test runs), connection configuration, and app discovery directly from Claude Desktop or Cursor.
 
-19. **[cat-agent](https://github.com/kemalcanbora/cat-agent)** [![GitHub stars](https://img.shields.io/github/stars/kemalcanbora/cat-agent?style=social&color=white)](https://github.com/kemalcanbora/cat-agent/stargazers)  
+24. **[cat-agent](https://github.com/kemalcanbora/cat-agent)** [![GitHub stars](https://img.shields.io/github/stars/kemalcanbora/cat-agent?style=social&color=white)](https://github.com/kemalcanbora/cat-agent/stargazers)  
     *Lightweight Python framework for LLM-powered agents with function execution (MIT).*  
     Features native function calling, hybrid RAG search, Docker/WASM code interpreter sandboxes, and MCP tool bindings.
 
-20. **[django-apcore](https://github.com/aiperceivable/django-apcore)** [![GitHub stars](https://img.shields.io/github/stars/aiperceivable/django-apcore?style=social&color=white)](https://github.com/aiperceivable/django-apcore/stargazers)  
+25. **[django-apcore](https://github.com/aiperceivable/django-apcore)** [![GitHub stars](https://img.shields.io/github/stars/aiperceivable/django-apcore?style=social&color=white)](https://github.com/aiperceivable/django-apcore/stargazers)  
     *Framework transforming Django REST endpoints into agent-callable functions with built-in ACLs (Apache-2.0).*  
     Enables automatic endpoint scanning, streamable HTTP MCP serving via `app.serve()`, OpenAI tool schema export, and declarative YAML-based access control without custom permission boilerplate.
 
-21. **[GenXAI Framework](https://github.com/genexsus-ai/genxai-framework)** [![GitHub stars](https://img.shields.io/github/stars/genexsus-ai/genxai-framework?style=social&color=white)](https://github.com/genexsus-ai/genxai-framework/stargazers)  
+26. **[GenXAI Framework](https://github.com/genexsus-ai/genxai-framework)** [![GitHub stars](https://img.shields.io/github/stars/genexsus-ai/genxai-framework?style=social&color=white)](https://github.com/genexsus-ai/genxai-framework/stargazers)  
     *Pluggable multi-agent tool execution and governance framework in Python (MIT).*  
     Provides CLI-based tool search and registration (`genxai tool search`), RBAC, guardrail policy engines, audit logging, and encrypted secret management.
 
@@ -168,14 +188,14 @@ For production-grade agentic architectures, enterprises frequently chain these o
 ```
 ┌─────────────────────────────────────────────────────────────┐
 │                   Agentic Orchestration Layer               │
-│        (LangChain, CrewAI, AutoGPT, Claude Desktop, Cursor)  │
+│    (LangChain, CrewAI, AutoGPT, Claude Desktop, Cursor)     │
 └──────────────────────────────┬──────────────────────────────┘
                                │ MCP / Tool Calling
                                ▼
 ┌─────────────────────────────────────────────────────────────┐
 │                 Security & Auth Gateway Boundary            │
-│         (OpenConnector / Composio / LiteLLM Proxy)          │
-│  - Keeps OAuth tokens & API keys out of LLM prompt context   │
+│     (OpenConnector / Composio / Arcade / LiteLLM Proxy)     │
+│  - Keeps OAuth tokens & API keys out of LLM prompt context  │
 │  - Enforces RBAC, per-user scopes, and token rotation       │
 └──────────────┬───────────────────────────────┬──────────────┘
                │                               │
@@ -183,8 +203,9 @@ For production-grade agentic architectures, enterprises frequently chain these o
 ┌──────────────────────────────┐ ┌────────────────────────────┐
 │      API & Data Actions      │ │   Execution Sandboxes      │
 │  - Activepieces (400+ tools) │ │   - E2B (Code Sandbox)     │
-│  - n8n (Complex Workflows)   │ │   - Windmill (Scripts)     │
-│  - Firecrawl (Web Scraping)  │ │   - Browser Use (Web UIs)  │
+│  - n8n (Complex Workflows)   │ │   - OpenHands (Dev Runtime)│
+│  - Firecrawl (Web Scraping)  │ │   - Windmill (Scripts)     │
+│  - Dify (Agent Apps)         │ │   - Browser Use (Web UIs)  │
 └──────────────────────────────┘ └────────────────────────────┘
 ```
 
@@ -206,12 +227,12 @@ Contributions are warmly welcomed! Help make this the most accurate and up-to-da
 ## ⚠️ Disclaimer & Security Best Practices
 
 - **Independent Community Resource**: This repository is a community-curated list for informational purposes. Inclusion does not imply endorsement.
-- **OAuth Boundary Protection**: Never pass raw third-party credentials or API secrets directly into LLM prompts or agent memory contexts. Always route tool invocations through authenticated runtime boundaries (e.g., OpenConnector, Composio).
-- **Execution Sandboxing**: Autonomous agent function calling should always execute within hardened, isolated sandboxes (e.g., E2B micro-VMs or dedicated containers) to prevent arbitrary code execution on host environments.
+- **OAuth Boundary Protection**: Never pass raw third-party credentials or API secrets directly into LLM prompts or agent memory contexts. Always route tool invocations through authenticated runtime boundaries (e.g., OpenConnector, Composio, Arcade).
+- **Execution Sandboxing**: Autonomous agent function calling should always execute within hardened, isolated sandboxes (e.g., E2B micro-VMs, OpenHands, or dedicated containers) to prevent arbitrary code execution on host environments.
 
 ---
 
-## ⭐ Star History
+##  Star History
 
 [![Star History Chart](https://star-history.dera.page/svg?repos=ishandutta2007/Awesome-Agentic-API-Integration-Tooling&type=date&legend=top-left)](https://star-history.dera.page/#ishandutta2007/Awesome-Agentic-API-Integration-Tooling&type=date&legend=top-left)
 
@@ -226,238 +247,3 @@ If you find this curated ecosystem directory helpful for your AI engineering wor
 - 🍴 **Fork it** and contribute your favorite tools, MCP servers, and gateways.
 - 📢 **Share it** with your network, team, and developer communities.
 - ☕ **Sponsor & Buy a Coffee**: If you would like to support ongoing research and maintenance, please visit the [GitHub Sponsor Dashboard](https://github.com/sponsors/ishandutta2007). Your support means the world!
-# Awesome-Agentic-API-Integration-Tooling
-
-## Top Agentic API Integration Tooling Ecosystem
-
-
-
-**Curated List of SaaS Products & Open-Source GitHub Projects**  
-
-*Focused on Tool Calling, Auth Gateways & Agent Function Execution*  
-
-**Last updated: March 2026**
-
-
-
-This repository tracks notable **SaaS platforms** and **open-source projects** for **Agentic API Integration Tooling**. These tools enable AI agents to securely discover, authenticate, and execute software functions across SaaS providers—bridging the gap between LLM reasoning and real-world API actions.
-
-
-
-**Examples** include Composio, Pipedream Connect, Toolhouse, LangChain Hub, Smithery, Trigger.dev, Zapier MCP, Superface, Apideck, and CloudQuery (the category leaders).
-
-
-
-**Open-source emphasis**: This section is heavily expanded with every major active project for self-hosting, auth gateways, and open tool execution—ideal for AI engineers, platform teams, and developers seeking transparent, vendor-independent agent integration.
-
-
-
-Contributions welcome! Open a PR to add/update entries. Keep descriptions factual and link to official sites.
-
-
-
-## Table of Contents
-
-- [SaaS/Hosted Platforms](#saas-hosted-platforms)
-
-- [Open-Source GitHub Projects](#open-source-github-projects)
-
-- [How to Contribute](#how-to-contribute)
-
-- [Disclaimer](#disclaimer)
-
-
-
-## SaaS/Hosted Platforms
-
-
-
-- **[Composio](https://composio.dev/)**  
-
-  Tool integration platform connecting AI agents to 100+ tools with managed authentication, execution, and observability. Features tool discovery, credential management, and LangChain/LlamaIndex integration.
-
-
-
-- **[Pipedream Connect](https://pipedream.com/connect)**  
-
-  Embedded integration platform for AI agents and SaaS products. Enables end-users to connect 2,000+ APIs with managed OAuth, and agents to execute actions programmatically.
-
-
-
-- **[Toolhouse](https://toolhouse.ai/)**  
-
-  Cloud platform for deploying and managing agent tools. Features tool marketplace, execution sandbox, and SDK for popular agent frameworks.
-
-
-
-- **[LangChain Hub](https://smith.langchain.com/hub)**  
-
-  Repository for sharing and discovering LangChain prompts, chains, and agents. Includes tool definitions and integration examples.
-
-
-
-- **[Smithery](https://smithery.ai/)**  
-
-  Registry and installer for Model Context Protocol (MCP) servers. Features discovery, quality scoring, and CLI installation across 23 clients including Claude, Cursor, and Windsurf .
-
-
-
-- **[Trigger.dev](https://trigger.dev/)**  
-
-  Background jobs and workflow platform for developers. Features long-running tasks, webhooks, and integrations for agent-triggered automation.
-
-
-
-- **[Zapier MCP](https://zapier.com/mcp)**  
-
-  Exposes Zapier's 6,000+ app integrations as MCP tools for AI agents. Enables agents to trigger Zaps and execute actions via natural language.
-
-
-
-- **[Superface](https://superface.ai/)**  
-
-  Integration platform for AI agents with pre-built connectors and API orchestration.
-
-
-
-- **[Apideck](https://www.apideck.com/)**  
-
-  Unified API platform for SaaS integrations. Provides normalized APIs for accounting, CRM, HRIS, and more.
-
-
-
-- **[CloudQuery](https://www.cloudquery.io/)**  
-
-  Data integration platform for cloud and security data. Extracts from APIs to warehouses with declarative configurations.
-
-
-
-## Open-Source GitHub Projects
-
-
-
-- **[OpenConnector](https://github.com/oomol-lab/open-connector)**  
-
-  Open-source auth gateway connecting 1,500+ SaaS providers to AI agents through SDK, CLI, MCP, HTTP, and OpenAPI (Apache-2.0). Positioned as a Pipedream/Composio alternative. Features **credential and OAuth boundary** keeping provider secrets behind the runtime, **1,000+ providers with 10,000+ predefined Actions**, token/scope/allow-block policy, run logs, and Web Console for provider browsing, Action debugging, and usage review . Self-hosted via Docker Compose or Kubernetes Helm chart. Uses SQLite or PostgreSQL for state .
-
-
-
-- **[Windmill](https://github.com/windmill-labs/windmill)**  
-
-  Open-source developer platform to turn scripts into internal apps, workflows, and integrations (AGPL-3.0). Positioned as an open-source alternative to Airplane and Pipedream. Features **scripts in Python, TypeScript, Go, Bash, and SQL** automatically converted to apps and no-code modules. Usable as self-hosted AWS Lambda. Flow builder for multi-step workflows, webhooks, and schedules .
-
-
-
-- **[Activepieces](https://github.com/activepieces/activepieces)**  
-
-  Open-source, AI-first automation platform (MIT) with 23k+ GitHub stars. Features 280+ integrations ("pieces") in TypeScript, drag-and-drop builder, AI agents, human-in-the-loop steps, and **every piece automatically exposed as an MCP server**—roughly 400 tools for Claude Desktop, Cursor, and Windsurf . Self-hosted on Railway for unlimited tasks at flat compute cost.
-
-
-
-- **[gen-mcp](https://github.com/genmcp/gen-mcp)**  
-
-  Open-source tool to convert OpenAPI specs to MCP servers (Go). Features **`genmcp convert`** transforming existing APIs into MCP tools, TLS encryption and OAuth/OIDC auth built-in, background processing with detached server mode, and fine-grained endpoint configuration . Builds multi-architecture container images from MCP file configurations.
-
-
-
-- **[openapi-mcp](https://github.com/ubermorgenland/openapi-mcp)**  
-
-  Open-source server exposing OpenAPI specs as MCP tools (Go). Features multi-mount endpoints for multiple specs, dynamic endpoint management via `spec-manager` CLI, database-backed spec storage, and HTTP API wrapper for remote management .
-
-
-
-- **[Automatisch MCP Server](https://github.com/milisp/automatisch-mcp-server)**  
-
-  Open-source MCP server providing AI assistants access to Automatisch workflow automation (MIT). Features workflow management (create, read, update, delete, test), connection management, execution monitoring, and app discovery . Integrates with Claude Desktop via npx.
-
-
-
-- **[django-apcore](https://pypi.org/project/django-apcore/)**  
-
-  Open-source framework turning Django APIs into agent-callable functions with **built-in ACL**. Features scan/list/describe endpoints programmatically, MCP serving with `app.serve(transport="streamable-http")`, OpenAI tools export, and auto-generated CLI from Django routes . **ACL YAML** declares rules mapping Django Groups to apcore roles—no permission code required.
-
-
-
-- **[cat-agent](https://pypi.org/project/cat-agent/)**  
-
-  Python framework for LLM-powered agents (open-source). Features function calling, RAG with vector/keyword/hybrid search, code interpreter sandbox (Docker or WASM), MCP support, multiple LLM backends (OpenAI, LlamaCpp, MLX-LM), and observability hooks .
-
-
-
-- **[Observal](https://github.com/BlazeUp-AI/Observal)**  
-
-  Self-hosted AI agent registry with built-in observability (Apache-2.0). Features **`observal scan`** auto-detecting and instrumenting MCP servers, agent pulling across IDEs (Claude Code, Kiro, Cursor, Gemini CLI), telemetry pipeline with ClickHouse and Grafana, and eval engine scoring agent sessions .
-
-
-
-- **[GenXAI Framework](https://pypi.org/project/genxai-framework/)**  
-
-  Open-source framework for building LLM agents with pluggable tools, multi-agent workflows, and governance (open-source). Features CLI for tool management (`genxai tool search`, `genxai tool create`), RBAC, policy engine, audit logging, guardrails, and secrets encryption .
-
-
-
-- **[squad](https://pkg.go.dev/github.com/cowdogmoo/squad)**  
-
-  Model-agnostic agent workflow CLI (Go, open-source). Features MCP server integration, multi-agent pipelines with cost budgets, OpenTelemetry tracing, and skills catalog via `squad skill add` .
-
-
-
-### Additional Strong Open-Source Options
-
-
-
-- **[MCP Hub](https://mcp-hub.com/)** — Open-source self-hosted registry for 4,400+ MCP servers with community ratings .
-
-- **[Pulse MCP](https://pulsemcp.com/)** — Directory for MCP server discovery and comparisons .
-
-- **[awesome-mcp-servers](https://github.com/bgizdov/awesome-mcp-servers)** — Auto-generated curated list of MCP servers .
-
-- **[awesome-mcp](https://github.com/abordage/awesome-mcp)** — Curated list of MCP servers, clients, and frameworks updated daily .
-
-- **[Zeline](https://pypi.org/project/zeline/)** — Cross-platform agent gateway with Telegram, WhatsApp, and webhook support (open-source) .
-
-- Community **n8n** workflows for agent tool orchestration and API chaining.
-
-
-
-**Frameworks for building custom systems**: Combine **OpenConnector** as the auth gateway with **Activepieces** for workflow automation and MCP tool exposure, **Windmill** for script-to-app conversion, **gen-mcp** or **openapi-mcp** for converting existing APIs to MCP tools, and **Observal** for agent registry and observability—creating a fully self-hosted, enterprise-grade agentic API integration platform.
-
-
-
-## How to Contribute
-
-
-
-1. Fork the repo.
-
-2. Add/edit entries in `README.md` (follow existing format).
-
-3. Include: name, link, 1–2 sentence description, and whether it's SaaS or open-source.
-
-4. Submit PR with a short explanation.
-
-
-
-Star the repo if you find it useful!
-
-
-
-## Disclaimer
-
-
-
-- This is a **community-curated** list — not exhaustive and not an endorsement.
-
-- Agent integration platforms handling credentials and executing functions must follow security best practices (least privilege, credential rotation, audit logging) and comply with applicable regulations.
-
-- Self-hosted open-source solutions require proper security hardening, OAuth app configuration, and ongoing maintenance. **Provider secrets must never reach the agent process**—auth gateways like OpenConnector keep credentials behind the runtime boundary while agents receive only metadata and execution results . Tool execution without proper sandboxing can expose host systems to arbitrary code execution.
-
-
-
----
-
-
-
-**Made for AI engineers, platform teams, and developers building transparent agent integration solutions.**  
-
-Let's make Agentic API Integration Tooling more open, data-driven, and secure.
