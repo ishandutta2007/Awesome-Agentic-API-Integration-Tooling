@@ -73,7 +73,7 @@ Below is the curated benchmark of hosted platforms enabling agent function execu
 
 The open-source ecosystem provides transparent, self-hosted alternatives to vendor lock-in, placing security boundaries, execution environments, and API credentials under direct developer control.
 
-The list below is sorted in **descending order by GitHub Stars_Count**:
+The list below is sorted in **descending order by GitHub_Stars_Count**:
 
 1. **[n8n](https://github.com/n8n-io/n8n)** [![GitHub_Stars](https://img.shields.io/github/stars/n8n-io/n8n?style=social&color=white)](https://github.com/n8n-io/n8n/stargazers)  
    *Fair-code workflow automation platform with native AI agent orchestration and tool execution (Sustainable Use License).*  
