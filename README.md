@@ -226,3 +226,5 @@ If you find this curated ecosystem directory helpful for your AI engineering wor
 - 🍴 **Fork it** and contribute your favorite tools, MCP servers, and gateways.
 - 📢 **Share it** with your network, team, and developer communities.
 - ☕ **Sponsor & Buy a Coffee**: If you would like to support ongoing research and maintenance, please visit the [GitHub Sponsor Dashboard](https://github.com/sponsors/ishandutta2007). Your support means the world!
+# Awesome-Agentic-API-Integration-Tooling
+
