@@ -32,7 +32,7 @@ This repository tracks the leading **SaaS platforms**, **Model Context Protocol 
 - [🤝 How to Contribute](#-how-to-contribute)
 - [⚠️ Disclaimer & Security Best Practices](#️-disclaimer--security-best-practices)
 - [⭐ Star History](#-star-history)
-- [💖 Support & Community](#-support--community)
+- [💖 Support](#-support)
 
 ---
 
@@ -238,12 +238,24 @@ Contributions are warmly welcomed! Help make this the most accurate and up-to-da
 
 ---
 
-## 💖 Support & Community
+## 💖 Support
 
 Thank you so much for exploring and supporting **Awesome Agentic API Integration Tooling**! 🌟
 
-If you find this curated ecosystem directory helpful for your AI engineering workflows, agent architectures, or research:
+If you find this curated directory helpful for your AI engineering workflows, agent architectures, or research:
 - ⭐ **Star this repository** to help fellow developers and engineers discover it!
-- 🍴 **Fork it** and contribute your favorite tools, MCP servers, and gateways.
+- 🍴 **Fork it** and contribute your favorite tools, MCP servers, and auth gateways.
 - 📢 **Share it** with your network, team, and developer communities.
-- ☕ **Sponsor & Buy a Coffee**: If you would like to support ongoing research and maintenance, please visit the [GitHub Sponsor Dashboard](https://github.com/sponsors/ishandutta2007). Your support means the world!
+- ☕ **Buy Me a Coffee / Sponsor**: If you would like to support ongoing research and maintenance, please consider buying a coffee via the [GitHub Sponsor Dashboard (ishandutta2007)](https://github.com/sponsors/ishandutta2007). Your support means the world!
+
+<div align="center">
+
+<a href="https://github.com/sponsors/ishandutta2007">
+  <img src="https://img.shields.io/badge/Sponsor%20on%20GitHub-❤️-ff69b4?style=for-the-badge&logo=githubsponsors&logoColor=white" alt="GitHub Sponsors" />
+</a>
+<a href="https://github.com/sponsors/ishandutta2007">
+  <img src="https://img.shields.io/badge/Buy%20Me%20A%20Coffee-☕-orange?style=for-the-badge&logo=buy-me-a-coffee&logoColor=white" alt="Buy Me A Coffee" />
+</a>
+
+</div>
+
