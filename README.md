@@ -139,43 +139,47 @@ The list below is sorted in **descending order by GitHub_Stars_Count**:
     *MCP Server Framework and Tool Development library for AI agents (MIT).*  
     Framework designed for building custom agent capabilities with built-in OAuth management across 21+ providers, secret injection, multi-user authentication, and granular tool authorization boundaries.
 
-17. **[gen-mcp](https://github.com/genmcp/gen-mcp)** [![GitHub_Stars](https://img.shields.io/github/stars/genmcp/gen-mcp?style=social&color=white)](https://github.com/genmcp/gen-mcp/stargazers)  
+17. **[agent-qa](https://vostride.com)** ([GitHub](https://github.com/vostride/agent-qa)) [![GitHub_Stars](https://img.shields.io/github/stars/vostride/agent-qa?style=social&color=white)](https://github.com/vostride/agent-qa/stargazers)  
+    *Open source QA runner exposing CLI and MCP interfaces for web, Android and iOS (FSL-1.1-ALv2).*  
+    Runs natural-language journeys with screenshot and step evidence, persistent memidex memory, and evidence-gated self-improvement across test runs.
+
+18. **[gen-mcp](https://github.com/genmcp/gen-mcp)** [![GitHub_Stars](https://img.shields.io/github/stars/genmcp/gen-mcp?style=social&color=white)](https://github.com/genmcp/gen-mcp/stargazers)  
     *CLI tool converting OpenAPI / Swagger specifications into MCP servers in Go (MIT).*  
     Features `genmcp convert` transforming REST APIs into MCP tools, built-in TLS encryption and OAuth/OIDC authentication, detached server modes, and multi-arch container packaging.
 
-18. **[Zeline](https://github.com/Mftrferdinand/Zeline)** [![GitHub_Stars](https://img.shields.io/github/stars/Mftrferdinand/Zeline?style=social&color=white)](https://github.com/Mftrferdinand/Zeline/stargazers)  
+19. **[Zeline](https://github.com/Mftrferdinand/Zeline)** [![GitHub_Stars](https://img.shields.io/github/stars/Mftrferdinand/Zeline?style=social&color=white)](https://github.com/Mftrferdinand/Zeline/stargazers)  
     *Cross-platform agent gateway with multi-channel webhook and messaging support (MIT).*  
     Connects AI agents to communication channels (Telegram, WhatsApp, Webhooks) and provides centralized routing for real-time tool event execution.
 
-19. **[awesome-mcp](https://github.com/abordage/awesome-mcp)** [![GitHub_Stars](https://img.shields.io/github/stars/abordage/awesome-mcp?style=social&color=white)](https://github.com/abordage/awesome-mcp/stargazers)  
+20. **[awesome-mcp](https://github.com/abordage/awesome-mcp)** [![GitHub_Stars](https://img.shields.io/github/stars/abordage/awesome-mcp?style=social&color=white)](https://github.com/abordage/awesome-mcp/stargazers)  
     *Curated directory of Model Context Protocol servers, clients, and frameworks (MIT).*  
     Tracks open-source MCP implementations, client bindings, and specification updates.
 
-20. **[awesome-mcp-servers (bgizdov)](https://github.com/bgizdov/awesome-mcp-servers)** [![GitHub_Stars](https://img.shields.io/github/stars/bgizdov/awesome-mcp-servers?style=social&color=white)](https://github.com/bgizdov/awesome-mcp-servers/stargazers)  
+21. **[awesome-mcp-servers (bgizdov)](https://github.com/bgizdov/awesome-mcp-servers)** [![GitHub_Stars](https://img.shields.io/github/stars/bgizdov/awesome-mcp-servers?style=social&color=white)](https://github.com/bgizdov/awesome-mcp-servers/stargazers)  
     *Automated index and catalog of active Model Context Protocol tools and servers (MIT).*  
     Monitors GitHub for new MCP repository releases and indexes them by category.
 
-21. **[squad](https://github.com/CowDogMoo/squad)** [![GitHub_Stars](https://img.shields.io/github/stars/CowDogMoo/squad?style=social&color=white)](https://github.com/CowDogMoo/squad/stargazers)  
+22. **[squad](https://github.com/CowDogMoo/squad)** [![GitHub_Stars](https://img.shields.io/github/stars/CowDogMoo/squad?style=social&color=white)](https://github.com/CowDogMoo/squad/stargazers)  
     *Model-agnostic agent workflow CLI in Go with MCP support (Apache-2.0).*  
     Provides multi-agent pipelines with cost budgets, OpenTelemetry tracing, and dynamic skill catalogs via `squad skill add`.
 
-22. **[openapi-mcp](https://github.com/ubermorgenland/openapi-mcp)** [![GitHub_Stars](https://img.shields.io/github/stars/ubermorgenland/openapi-mcp?style=social&color=white)](https://github.com/ubermorgenland/openapi-mcp/stargazers)  
+23. **[openapi-mcp](https://github.com/ubermorgenland/openapi-mcp)** [![GitHub_Stars](https://img.shields.io/github/stars/ubermorgenland/openapi-mcp?style=social&color=white)](https://github.com/ubermorgenland/openapi-mcp/stargazers)  
     *Dynamic OpenAPI-to-MCP bridge server in Go (Apache-2.0).*  
     Exposes OpenAPI specs as MCP tools with dynamic endpoint management via `spec-manager` CLI, database-backed spec storage, and HTTP administration APIs.
 
-23. **[Automatisch MCP Server](https://github.com/milisp/automatisch-mcp-server)** [![GitHub_Stars](https://img.shields.io/github/stars/milisp/automatisch-mcp-server?style=social&color=white)](https://github.com/milisp/automatisch-mcp-server/stargazers)  
+24. **[Automatisch MCP Server](https://github.com/milisp/automatisch-mcp-server)** [![GitHub_Stars](https://img.shields.io/github/stars/milisp/automatisch-mcp-server?style=social&color=white)](https://github.com/milisp/automatisch-mcp-server/stargazers)  
     *MCP server providing AI assistants direct access to Automatisch workflow automation (MIT).*  
     Supports workflow management (CRUD, test runs), connection configuration, and app discovery directly from Claude Desktop or Cursor.
 
-24. **[cat-agent](https://github.com/kemalcanbora/cat-agent)** [![GitHub_Stars](https://img.shields.io/github/stars/kemalcanbora/cat-agent?style=social&color=white)](https://github.com/kemalcanbora/cat-agent/stargazers)  
+25. **[cat-agent](https://github.com/kemalcanbora/cat-agent)** [![GitHub_Stars](https://img.shields.io/github/stars/kemalcanbora/cat-agent?style=social&color=white)](https://github.com/kemalcanbora/cat-agent/stargazers)  
     *Lightweight Python framework for LLM-powered agents with function execution (MIT).*  
     Features native function calling, hybrid RAG search, Docker/WASM code interpreter sandboxes, and MCP tool bindings.
 
-25. **[django-apcore](https://github.com/aiperceivable/django-apcore)** [![GitHub_Stars](https://img.shields.io/github/stars/aiperceivable/django-apcore?style=social&color=white)](https://github.com/aiperceivable/django-apcore/stargazers)  
+26. **[django-apcore](https://github.com/aiperceivable/django-apcore)** [![GitHub_Stars](https://img.shields.io/github/stars/aiperceivable/django-apcore?style=social&color=white)](https://github.com/aiperceivable/django-apcore/stargazers)  
     *Framework transforming Django REST endpoints into agent-callable functions with built-in ACLs (Apache-2.0).*  
     Enables automatic endpoint scanning, streamable HTTP MCP serving via `app.serve()`, OpenAI tool schema export, and declarative YAML-based access control without custom permission boilerplate.
 
-26. **[GenXAI Framework](https://github.com/genexsus-ai/genxai-framework)** [![GitHub_Stars](https://img.shields.io/github/stars/genexsus-ai/genxai-framework?style=social&color=white)](https://github.com/genexsus-ai/genxai-framework/stargazers)  
+27. **[GenXAI Framework](https://github.com/genexsus-ai/genxai-framework)** [![GitHub_Stars](https://img.shields.io/github/stars/genexsus-ai/genxai-framework?style=social&color=white)](https://github.com/genexsus-ai/genxai-framework/stargazers)  
     *Pluggable multi-agent tool execution and governance framework in Python (MIT).*  
     Provides CLI-based tool search and registration (`genxai tool search`), RBAC, guardrail policy engines, audit logging, and encrypted secret management.
 
